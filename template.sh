@@ -18,9 +18,9 @@ version(){
 
 ## help funcation
 help(){
-    echo -e "-------------------------------"
-    echo -e "             biosxy            "
-    echo -e "-------------------------------"
+    echo -e "========================================="
+    echo -e "               biosxytk                  "
+    echo -e "-----------------------------------------"
     echo -e "ARGS   TYPE    DESC"
     echo -e "  -h           Print This Help Info"
     echo -e "  -v           Print Version Info"
@@ -30,6 +30,7 @@ help(){
     echo -e "$0 -v "
     echo -e "$0 -h "
     echo -e "$0 -f 10 -b hello_sxy"
+    echo -e "==========================================="
     exit 0
     
     
@@ -51,7 +52,6 @@ bar(){
 }
 
 ## main funcation
-main(){
 
 
 if [ $# -gt 0 ];then
@@ -72,7 +72,7 @@ if [ $# -gt 0 ];then
             barstr=$OPTARG;;
             ?)
                 echo -e "[ ERROR ] Umm, Unknown arguments!"
-            exit 1;;
+                exit 1;;
         esac
     done
     foo
@@ -84,4 +84,4 @@ else
 fi
 exit 0
 
-}
+
