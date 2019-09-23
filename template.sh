@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
-# coding:utf-8
-# author:kim
-# copyrights 2019 kimyangbaochen@vip.qq.com all rights reserved.
+# coding: utf-8
+# author: kim
+# copyrights 2019 KimBioInfoStduio all rights reserved.
 
 
 
 ## some configure
-VERSION="0.0.1 alpha"
+VERSION="0.0.2 alpha"
 
 ## version funcation
 version(){
     echo -e "version: $VERSION"
-    echo -e "we start our jobs in this version"
+    echo -e "we just start our job no so long,"
+	echo -e "and the tools still in a early stage of develop life,"
+	echo -e "so just for PLAY ONLY not for PRODUCTIONS."
 }
 
 ## help funcation
@@ -49,6 +51,9 @@ bar(){
 }
 
 ## main funcation
+main(){
+
+
 if [ $# -gt 0 ];then
     while getopts "hvf:b:" args;
     do
@@ -78,3 +83,5 @@ else
     exit 0
 fi
 exit 0
+
+}
