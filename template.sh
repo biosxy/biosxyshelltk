@@ -12,8 +12,8 @@ VERSION="0.0.2 alpha"
 version(){
     echo -e "version: $VERSION"
     echo -e "we just start our job no so long,"
-	echo -e "and the tools still in a early stage of develop life,"
-	echo -e "so just for PLAY ONLY not for PRODUCTIONS."
+    echo -e "and the tools still in a early stage of develop life,"
+    echo -e "so just for PLAY ONLY not for PRODUCTIONS."
 }
 
 ## help funcation
